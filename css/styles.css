@@ -45,8 +45,46 @@ html {
 
 .search_input_section {
   width: 100%;
-  border: 3px solid #fc3b00;
   height: 25%;
+}
+
+.search_input_main_label {
+  font-weight: bold;
+}
+
+.search_input_secondary_label {
+  font-size: 10px;
+}
+
+.search_field_container {
+  display: flex;
+}
+
+.search_field_location_logo {
+  width: 2em;
+  height: 2em;
+  border-bottom-left-radius: 0.4em;
+  border-top-left-radius: 0.4em;
+  background-color: #f2f2f2;
+  /*padding-left: 0.8em;*/
+  padding-top: 0.7em;
+  text-align: center;
+}
+
+.location_input_field {
+  border: 1px solid #f2f2f2;
+  outline: none;
+}
+
+.location_search_button {
+  width: 12em;
+  border-bottom-right-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
 }
 
 /*accommodation*/
@@ -59,13 +97,16 @@ html {
 
 .main_search_result {
   width: 100%;
-  border: 3px solid #00fc3f;
+  background-color: #f2f2f2;
+  border-radius: 2em;
   flex: 2;
+  margin-right: 2em;
 }
 
 .most_wanted_search_result {
   width: 100%;
-  border: 3px solid #cefc00;
+  background-color: #f2f2f2;
+  border-radius: 2em;
   flex: 1;
 }
 
@@ -81,22 +122,34 @@ html {
   width: 100%;
   height: 25%;
   display: flex;
+  background-color: #f2f2f2;
 }
 
 .about_us {
   width: 100%;
-  border: 3px solid #cefc00;
   flex: 1;
+  margin-left: 2em;
 }
 
 .our_accommodations {
   width: 100%;
-  border: 3px solid #cefc00;
   flex: 1;
 }
 
 .help_center {
   width: 100%;
-  border: 3px solid #cefc00;
   flex: 1;
+}
+
+/*footer*/
+.footer_category {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+.footer a {
+  font-size: 10px;
+  text-decoration: none;
+  color: black;
 }

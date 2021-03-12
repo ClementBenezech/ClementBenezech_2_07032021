@@ -8,6 +8,7 @@
     <meta name="description" content="This page is a transcription of an accomodation booking website UX/UI design into HTML/CSS. It aims at W3C compliance, code quality, and responsiveness.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/svg+xml" href="images/logo/Reservia.svg">
+    <script src="https://kit.fontawesome.com/4966b9f0e9.js" crossorigin="anonymous"></script>
     <!--To do:OpenGraphData  Image and description-->
 </head>
 
@@ -24,9 +25,14 @@
     </nav>
 </header> 
 
-<section class="search_input_section">
-    Search input section
-    <!--Contains search labels, input fields, search filters-->
+<section class="search_input_section">     <!--Contains search labels, input fields, search filters-->
+    <p class="search_input_main_label">Trouvez votre hébergement pour des vacances de rêve</p>
+    <p class="search_input_secondary_label">En plein centre ville ou en pleine nature</p>
+    <div class="search_field_container">
+        <div class="search_field_location_logo"><i class="fas fa-map-marker-alt"></i></div>
+        <input class="location_input_field" type="text" id="location_input_field">
+        <input class="location_search_button" type="button" id="location_search_button" value="Rechercher">
+    </div>
 </section>
 
 
@@ -49,9 +55,22 @@
 
 <footer class="footer">
     <!-- Contains coporate, legal, and contact links -->
-    <div class="about_us">ABOUT US</div>
-    <div class="our_accommodations">OUR ACCOMMODATIONS</div>
-    <div class="help_center">HELP CENTER</div>
+    <div class="about_us">
+        <p class="footer_category">A propos</p>
+        <p><a href="#">Fonctionnement du site</a></p>
+        <p><a href="#">Conditions générales de vente</a></p>
+        <p><a href="#">Données et confidentialité</a></p>
+    </div>
+    <div class="our_accommodations">
+        <p class="footer_category">Nos Hébergements</p>
+        <p><a href="#">Charte Qualité</a></p>
+        <p><a href="#">Soumettre votre hotel</a></p>
+    </div>
+    <div class="help_center">
+        <p class="footer_category">Assistance</p>
+        <p><a href="#">Centre d'aide</a></p>
+        <p><a href="#">Nous contacter</a></p>
+    </div>
 </footer>
 </body>
 </html>
