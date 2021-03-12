@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway-VariableFont_wght.ttf");
+}
+
+html {
+  font-family: "Raleway";
+}
+
+.company_header {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.company_logo {
+  max-height: 4em;
+  margin-top: 2em;
+}
+
+.top_nav_menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.top_nav_menu a {
+  color: #0065fc;
+  text-decoration: none;
+  height: 4em;
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.top_nav_menu a:hover {
+  color: #fc3b00;
+}
+
+.top_nav_menu a:active {
+  color: #08fc00;
+}
+
+/*Search Input Elements*/
+
+.search_input_section {
+  width: 100%;
+  border: 3px solid #fc3b00;
+  height: 25%;
+}
+
+/*accommodation*/
+
+.accommodation_section {
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+
+.main_search_result {
+  width: 100%;
+  border: 3px solid #00fc3f;
+  flex: 2;
+}
+
+.most_wanted_search_result {
+  width: 100%;
+  border: 3px solid #cefc00;
+  flex: 1;
+}
+
+/*Activities*/
+
+.search_result_related_activities {
+  width: 100%;
+  height: 20%;
+  border: 3px solid blue;
+}
+
+.footer {
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+
+.about_us {
+  width: 100%;
+  border: 3px solid #cefc00;
+  flex: 1;
+}
+
+.our_accommodations {
+  width: 100%;
+  border: 3px solid #cefc00;
+  flex: 1;
+}
+
+.help_center {
+  width: 100%;
+  border: 3px solid #cefc00;
+  flex: 1;
+}
