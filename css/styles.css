@@ -160,11 +160,11 @@ html {
 
 .search_result_related_activities {
   min-height: 15em;
-  width: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  grid-column-gap: 20px;
+  grid-column-gap: 3.33%;
   margin-bottom: 1em;
 }
 
