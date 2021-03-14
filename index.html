@@ -28,16 +28,39 @@
 <section class="search_input_section">     <!--Contains search labels, input fields, search filters-->
     <p class="search_input_main_label">Trouvez votre hébergement pour des vacances de rêve</p>
     <p class="search_input_secondary_label">En plein centre ville ou en pleine nature</p>
-    <div class="search_field_container">
+    <div class="search_field_container"> <!--Input Field for desired location-->
         <div class="search_field_location_logo"><i class="fas fa-map-marker-alt"></i></div>
         <input class="location_input_field" type="text" id="location_input_field">
         <input class="location_search_button" type="button" id="location_search_button" value="Rechercher">
     </div>
-    <div class="search_filters_container">
-        <div class="search_filter_icon"><i class="fas fa-money-bill-wave"></i></div>
-        <div class="search_filter_icon"><i class="fas fa-child"></i></div>
-        <div class="search_filter_icon"><i class="fas fa-heart"></i></div>
-        <div class="search_filter_icon"><i class="fas fa-dog"></i></div>
+    <div class="search_filters_container"> <!--Search Filters-->
+        <div class='search_filter'>
+            <div class="search_filter_icon">
+                <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <div class="search_filter_label">Economique</div>
+        </div>
+
+        <div class='search_filter'>
+            <div class="search_filter_icon">
+                <i class="fas fa-child"></i>
+            </div>
+            <div class="search_filter_label">Familial</div>
+        </div>
+
+        <div class='search_filter'>
+            <div class="search_filter_icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="search_filter_label">Romantique</div>
+        </div>
+
+        <div class='search_filter'>
+            <div class="search_filter_icon">
+                <i class="fas fa-dog"></i>
+            </div>
+            <div class="search_filter_label">Animaux autorisés</div>
+        </div>
     </div>
 </section>
 
@@ -51,7 +74,7 @@
         <div class="main_result_accommodation_thumbnail">4</div>
         <div class="main_result_accommodation_thumbnail">5</div>
         <div class="main_result_accommodation_thumbnail">6</div>
-        <p class="search_result_show_more"><a href="#">Afficher plus</a></p> 
+        <a class="search_result_show_more" href="#">Afficher plus</a>
 </section>
 
 <aside class="most_wanted_search_result">
