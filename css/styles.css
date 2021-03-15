@@ -27,14 +27,15 @@ html {
 .top_nav_menu a {
   color: #0065fc;
   text-decoration: none;
-  height: 4em;
-  margin-top: 3em;
+  height: 10vh;
+  padding-top: 4vh;
+  /*margin-top: 3em;*/
   margin-left: 2em;
   margin-right: 2em;
 }
 
 .top_nav_menu a:hover {
-  color: #fc3b00;
+  border-top: 1px solid #0065fc;
 }
 
 .top_nav_menu a:active {
@@ -72,6 +73,8 @@ html {
 .location_input_field {
   border: 1px solid #f2f2f2;
   outline: none;
+  padding-left: 1em;
+  font-weight: bold;
 }
 
 .location_search_button {
@@ -91,13 +94,22 @@ html {
   margin-top: 2em;
 }
 
+.search_filters_label {
+  font-weight: bold;
+  height: 2em;
+  width: 2em;
+  margin-top: 0.6em;
+  margin-right: 2em;
+}
+
 .search_filter {
   display: flex;
   margin: 0.2em;
 }
 
 .search_filter:hover {
-  transform: scale(1.1);
+  transform: scale(1.05); /*make filter look slightly bigger on mouse hover*/
+  color: #0065fc;
 }
 
 .search_filter_icon {
@@ -113,7 +125,7 @@ html {
   color: #0065fc;
 }
 
-.search_filter_label {
+.search_filter_tag {
   border: 1px solid #f2f2f2;
   height: 2em;
   border-radius: 2em;
@@ -128,7 +140,7 @@ html {
   user-select: none; /*To keep regular mouse pointer on hover*/
 }
 
-/*accommodation*/
+/*accommodation section layout and styling*/
 
 .accommodation_section {
   width: 100%;
@@ -137,20 +149,87 @@ html {
 }
 
 .main_search_result {
-  width: 100%;
   background-color: #f2f2f2;
   border-radius: 2em;
   flex: 2;
   margin-right: 2em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  /*justify-content: space-evenly;*/
+}
+
+.search_result_label {
+  width: 100%;
+  font-weight: bold;
+  padding-left: 3vw;
+}
+
+.main_search_result_grid {
+  width: 100%;
+  height: 33vw;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  padding-left: 3vw;
+}
+
+.main_result_accommodation_thumbnail_generic {
+  border-radius: 2vh;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 3vh;
+  margin-right: 3vh;
+}
+
+.main_result_accommodation_thumbnail_1 {
+  grid-column: 1 / 1;
+  grid-row: 1 / 2;
+  /*grid-row: 1 / 5;*/
+}
+
+.main_result_accommodation_thumbnail_2 {
+  grid-column: 2 / 2;
+  grid-row: 1 / 2;
+  /*grid-row: 1 / 5;*/
+}
+
+.main_result_accommodation_thumbnail_3 {
+  grid-column: 3 / 3;
+  grid-row: 1 / 2;
+  /*grid-row: 1 / 5;*/
+}
+
+.main_result_accommodation_thumbnail_4 {
+  grid-column: 1 / 1;
+  grid-row: 2 / 3;
+  /*grid-row: 5 / 9;*/
+}
+
+.main_result_accommodation_thumbnail_5 {
+  grid-column: 2 / 2;
+  grid-row: 2 / 3;
+  /*grid-row: 5 / 9;*/
+}
+
+.main_result_accommodation_thumbnail_6 {
+  grid-column: 3 / 3;
+  grid-row: 2 / 2;
+  /*grid-row: 5 / 9;*/
 }
 
 .main_search_result a {
   text-decoration: none;
   margin-left: 1em;
   font-size: 11px;
+}
+
+.search_result_show_more,
+.search_result_show_more:visited {
+  width: 100%;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1vh;
+  padding-left: 2em;
 }
 
 .most_wanted_search_result {
@@ -160,30 +239,48 @@ html {
   flex: 1;
 }
 
-.search_result_label {
-  width: 100%;
-  font-weight: bold;
-  padding-left: 2em;
+.main_result_accommodation_img {
+  border-radius: 2vh 2vh 0 0;
+  height: 60%;
+  width: 96%;
+  margin: 2% 2% 0% 2%;
+  overflow: none;
+  object-fit: cover; /*To avoid stretching and maintain aspect ratio*/
 }
 
-.search_result_show_more,
-.search_result_show_more:visited {
-  width: 100%;
+.main_result_accommodation_name {
+  height: 12%;
+  width: 96%;
+  font-size: 1vw;
   font-weight: bold;
-  color: black;
-  margin-bottom: 1em;
-  padding-left: 2em;
+  margin-left: 1vw;
+  padding-top: 0.5vh;
 }
 
-.main_result_accommodation_thumbnail {
-  width: 28%;
-  background-color: white;
-  border-radius: 2em;
-  margin: 1em;
+.main_result_accommodation_pricing {
+  height: 12%;
+  width: 96%;
+  font-size: 1vw;
+  margin-left: 1vw;
+}
+
+.main_result_accommodation_stars_container {
+  display: flex;
+  margin-left: 1vw;
+  font-size: 0.9vw;
+  height: 10%;
+}
+
+.blue_star {
+  color: #0065fc;
+}
+
+.grey_star {
+  color: lightgrey;
 }
 
 .most_wanted_accommodation_thumbnail {
-  width: 90%;
+  width: 100%;
   background-color: white;
   border-radius: 2em;
   margin: 1em;
@@ -192,7 +289,7 @@ html {
 /*Activities*/
 
 .search_result_related_activities {
-  min-height: 15em;
+  min-height: 15vh;
   width: 90%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;

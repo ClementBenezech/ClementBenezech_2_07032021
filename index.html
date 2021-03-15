@@ -30,36 +30,37 @@
     <p class="search_input_secondary_label">En plein centre ville ou en pleine nature</p>
     <div class="search_field_container"> <!--Input Field for desired location-->
         <div class="search_field_location_logo"><i class="fas fa-map-marker-alt"></i></div>
-        <input class="location_input_field" type="text" id="location_input_field">
+        <input class="location_input_field" type="text" id="location_input_field" value="Marseille, France">
         <input class="location_search_button" type="button" id="location_search_button" value="Rechercher">
     </div>
     <div class="search_filters_container"> <!--Search Filters-->
-        <div class='search_filter'>
+        <div class="search_filters_label">Filtres</div>
+        <div class="search_filter">
             <div class="search_filter_icon">
                 <i class="fas fa-money-bill-wave"></i>
             </div>
-            <div class="search_filter_label">Economique</div>
+            <div class="search_filter_tag">Economique</div>
         </div>
 
         <div class='search_filter'>
             <div class="search_filter_icon">
                 <i class="fas fa-child"></i>
             </div>
-            <div class="search_filter_label">Familial</div>
+            <div class="search_filter_tag">Familial</div>
         </div>
 
         <div class='search_filter'>
             <div class="search_filter_icon">
                 <i class="fas fa-heart"></i>
             </div>
-            <div class="search_filter_label">Romantique</div>
+            <div class="search_filter_tag">Romantique</div>
         </div>
 
         <div class='search_filter'>
             <div class="search_filter_icon">
                 <i class="fas fa-dog"></i>
             </div>
-            <div class="search_filter_label">Animaux autorisés</div>
+            <div class="search_filter_tag">Animaux autorisés</div>
         </div>
     </div>
 </section>
@@ -68,15 +69,88 @@
 <section id="accomodation" class="accommodation_section">
     <section class="main_search_result"> <!--Contains search results main display -->
         <p class="search_result_label">Hébergements à Marseille</p>
-        <div class="main_result_accommodation_thumbnail">1</div>
-        <div class="main_result_accommodation_thumbnail">2</div>
-        <div class="main_result_accommodation_thumbnail">3</div>
-        <div class="main_result_accommodation_thumbnail">4</div>
-        <div class="main_result_accommodation_thumbnail">5</div>
-        <div class="main_result_accommodation_thumbnail">6</div>
-        <a class="search_result_show_more" href="#">Afficher plus</a>
-</section>
+        <div class="main_search_result_grid">
+            <div class="main_result_accommodation_thumbnail_generic main_result_accommodation_thumbnail_1">
+                <img class="main_result_accommodation_img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"></img>
+                <div class="main_result_accommodation_name">Auberge la Cannebière</div>
+                <div class="main_result_accommodation_pricing">Nuit à partir de 25€</div>
+                <div class="main_result_accommodation_stars_container">
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="grey_star"><i class="fas fa-star"></i></div>
+                </div>
+            </div>
 
+            <div class="main_result_accommodation_thumbnail_generic main_result_accommodation_thumbnail_2">
+                <img class="main_result_accommodation_img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"></img>
+                <div class="main_result_accommodation_name">Hôtel du port</div>
+                <div class="main_result_accommodation_pricing">Nuit à partir de 52€</div>
+                <div class="main_result_accommodation_stars_container">
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                </div>
+            </div>
+
+            <div class="main_result_accommodation_thumbnail_generic main_result_accommodation_thumbnail_3">
+                <img class="main_result_accommodation_img" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"></img>
+                <div class="main_result_accommodation_name">Hôtel Les mouettes</div>
+                <div class="main_result_accommodation_pricing">Nuit à partir de 76€</div>
+                <div class="main_result_accommodation_stars_container">
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="grey_star"><i class="fas fa-star"></i></div>
+                </div>
+            </div>
+
+            <div class="main_result_accommodation_thumbnail_generic main_result_accommodation_thumbnail_4">
+                <img class="main_result_accommodation_img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"></img>
+                <div class="main_result_accommodation_name">Hôtel de la mer</div>
+                <div class="main_result_accommodation_pricing">Nuit à partir de 46€</div>
+                <div class="main_result_accommodation_stars_container">
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="grey_star"><i class="fas fa-star"></i></div>
+                    <div class="grey_star"><i class="fas fa-star"></i></div>
+                </div>
+            </div>
+
+            <div class="main_result_accommodation_thumbnail_generic main_result_accommodation_thumbnail_5">
+                <img class="main_result_accommodation_img" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"></img>
+                <div class="main_result_accommodation_name">Auberge Le Panier</div>
+                <div class="main_result_accommodation_pricing">Nuit à partir de 96€</div>
+                <div class="main_result_accommodation_stars_container">
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="grey_star"><i class="fas fa-star"></i></div>
+                </div>
+            </div>
+
+            <div class="main_result_accommodation_thumbnail_generic main_result_accommodation_thumbnail_6">
+                <img class="main_result_accommodation_img" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"></img>
+                <div class="main_result_accommodation_name">Hôtel chez Amina</div>
+                <div class="main_result_accommodation_pricing">Nuit à partir de 52€</div>
+                <div class="main_result_accommodation_stars_container">
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                    <div class="blue_star"><i class="fas fa-star"></i></div>
+                </div>
+            </div>
+        </div>
+            <a class="search_result_show_more" href="#">Afficher plus</a>
+</section>
+<!--<img class="main_result_accommodation_img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">-->
 <aside class="most_wanted_search_result">
     <!--Contains most favorited results display -->
     <p class="search_result_label">Les plus populaires</p>
