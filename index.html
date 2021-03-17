@@ -20,8 +20,8 @@
     <nav class="top_nav_menu">
         <!--Contains Reservia nav Links. -->
         <a href="#accomodation">Hébergements</a>
-        <a href="#accomodation">Activités</a>
-        <a href="#accomodation">S'inscrire</a>
+        <a href="#activities">Activités</a>
+        <a href="#">S'inscrire</a>
     </nav>
 </header> 
 
@@ -72,7 +72,7 @@
 
 <section id="accomodation" class="accommodation_section">
     <section class="main_search_result"> <!--Contains search results main display -->
-        <p class="search_result_label">Hébergements à Marseille</p>
+            <p class="search_result_label">Hébergements à Marseille</p>
         <div class="main_search_result_grid">
             <div class="main_result_accommodation_thumbnail_generic main_result_accommodation_thumbnail_1">
                 <img class="main_result_accommodation_img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
@@ -154,9 +154,11 @@
         </div>
             <a class="search_result_show_more" href="#">Afficher plus</a>
     </section>    
-    <aside class="most_wanted_search_result">
-    <!--Contains most favorited results display -->
-        <p class="search_result_label">Les plus populaires</p>
+    <aside class="most_wanted_search_result">  <!--Contains most favorited results display -->
+        <div class="most_wanted_search_result_label_container">
+            <p class="search_result_label">Les plus populaires</p>
+            <i class="fas fa-chart-line"></i>
+        </div>
         <div class="most_wanted_search_result_grid">
             <div class="most_wanted_accommodation_thumbnail_generic most_wanted_accommodation_thumbnail_1">
                 <img class="most_wanted_accommodation_img" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel du port">
@@ -206,15 +208,27 @@
     </aside>
 </section>
 
-<p class="search_result_label">Activités à Marseille</p>
+<p id="activities" class="search_result_label">Activités à Marseille</p>
 <section class="search_result_related_activities">     <!--Activities near accomodation search results -->
     
-    <div class="related_activity_thumbnail_1">1</div>
-    <div class="related_activity_thumbnail_2">2</div>
-    <div class="related_activity_thumbnail_3">3</div>
-    <div class="related_activity_thumbnail_4">4</div>
-    <div class="related_activity_thumbnail_5">5</div>
-    <div class="related_activity_thumbnail_6">6</div>
+    <img class="related_activity_grid_element_generic related_activity_img_generic related_activity_img_1" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Hôtel du port">
+    <div class="related_activity_grid_element_generic related_activity_name_generic related_activity_name_1">Vieux Port</div>
+    
+    <img class="related_activity_grid_element_generic related_activity_img_generic related_activity_img_2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Hôtel du port">
+    <div class="related_activity_grid_element_generic related_activity_name_generic related_activity_name_2">Fort de Pomègues</div>
+    
+    <img class="related_activity_grid_element_generic related_activity_img_generic related_activity_img_3" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Hôtel du port">
+    <div class="related_activity_grid_element_generic related_activity_name_generic related_activity_name_3">Îles du Frioul</div>
+    
+    <img class="related_activity_grid_element_generic related_activity_img_generic related_activity_img_4" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Hôtel du port">
+    <div class="related_activity_grid_element_generic related_activity_name_generic related_activity_name_4">Parc National des Calanques</div>
+    
+    <img class="related_activity_grid_element_generic related_activity_img_generic related_activity_img_5" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hôtel du port">
+    <div class="related_activity_grid_element_generic related_activity_name_generic related_activity_name_5">Notre-Dame-de-la-Garde</div>
+    
+    <img class="related_activity_grid_element_generic related_activity_img_generic related_activity_img_6" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Hôtel du port">
+    <div class="related_activity_grid_element_generic related_activity_name_generic related_activity_name_6">Parc Longchamp</div>
+    
 </section>
 
 <footer class="footer">
