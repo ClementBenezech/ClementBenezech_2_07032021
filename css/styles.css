@@ -7,11 +7,23 @@ html {
   font-family: "Raleway";
 }
 
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 .company_header {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
   font-size: 12px;
+}
+
+/*Generic Class to put an element above the default Z-Index*/
+.above {
+  z-index: 99;
 }
 
 /*To hide H2 title elements required for W3C compliance*/
@@ -20,27 +32,33 @@ html {
 }
 
 .company_logo {
-  margin-top: 2em;
-  max-height: 4em;
+  /*margin-top: 2em;*/
+  max-width: 6em;
+  padding-top: 2vh;
 }
 
 .top_nav_menu {
   display: flex;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
 }
 
 .top_nav_menu a {
-  color: #0065fc;
-  text-decoration: none;
-  padding-top: 4vh;
-  /*margin-top: 3em;*/
+  padding-top: 3vh;
   margin-left: 2em;
   margin-right: 2em;
+  font-weight: bold;
 }
 
 .top_nav_menu a:hover,
 .top_nav_menu a:active {
   border-top: 1px solid #0065fc;
+  color: #0065fc;
+}
+
+.signup_link,
+.signup_link:visited {
+  color: #0065fc;
+  font-weight: bolder;
 }
 
 /*Search Input Elements*/
@@ -50,15 +68,19 @@ html {
 }
 
 .search_input_main_label {
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 1.1em;
+  margin-top: 1em;
 }
 
 .search_input_secondary_label {
-  font-size: 10px;
+  font-size: 0.8em;
+  margin-top: 0.4em;
 }
 
 .search_field_container {
   display: flex;
+  margin-top: 0.5em;
 }
 
 .search_field_location_logo {
@@ -69,6 +91,8 @@ html {
   background-color: #f2f2f2;
   padding-top: 0.7em;
   text-align: center;
+  border-bottom-left-radius: 0.9em;
+  border-top-left-radius: 0.9em;
 }
 
 .location_input_field {
@@ -79,9 +103,9 @@ html {
 }
 
 .location_search_button {
-  width: 12em;
-  border-bottom-right-radius: 0.4em;
-  border-top-right-radius: 0.4em;
+  width: 8em;
+  border-bottom-right-radius: 0.9em;
+  border-top-right-radius: 0.9em;
   background-color: #0065fc;
   color: white;
   font-weight: bold;
@@ -92,7 +116,7 @@ html {
 .search_filters_container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .search_filters_label {
@@ -193,7 +217,7 @@ html {
 }
 
 .main_result_accommodation_thumbnail_generic {
-  border-radius: 2vw;
+  border-radius: 1vw;
   align-items: center;
   background-color: white;
   margin-bottom: 2vw;
