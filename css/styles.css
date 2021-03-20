@@ -102,7 +102,7 @@ a:visited {
   font-weight: bold;
 }
 
-.location_search_button {
+.desktop_location_search_button {
   width: 8em;
   border-bottom-right-radius: 0.9em;
   border-top-right-radius: 0.9em;
@@ -111,6 +111,23 @@ a:visited {
   font-weight: bold;
   outline: none;
   border: none;
+}
+
+.mobile_location_search_button {
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  font-size: 5vw;
+  outline: none;
+  border: none;
+  width: 15vw;
+  border-radius: 35%;
+  height: 100%;
+  box-sizing: border-box;
+  margin-left: -10vw;
+  align-items: center;
+  padding-left: 5vw;
+  display: none;
 }
 
 .search_filters_container {
@@ -123,8 +140,9 @@ a:visited {
   font-weight: bold;
   height: 2vw;
   width: 2vw;
-  margin-top: 0.6em;
-  margin-right: 2em;
+  margin-top: 0.5vw;
+  margin-right: 2vw;
+  font-size: 1vw;
 }
 
 .search_filter {
@@ -146,7 +164,7 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -1.5em;
+  margin-right: -2vw;
   z-index: 2; /* To display icon div 'above' label div'*/
   color: #0065fc;
   font-size: 0.8em;
@@ -162,10 +180,10 @@ a:visited {
   justify-content: center;
   align-items: center;
   z-index: 1; /* To display Label div 'under' icon div'*/
-  padding-left: 2.2em;
+  padding-left: 2.5vw;
   padding-right: 1em;
   font-weight: bold;
-  font-size: 0.7em;
+  font-size: 1vw;
   user-select: none; /*To keep regular mouse pointer on hover*/
 }
 
@@ -548,7 +566,7 @@ a:visited {
 }
 
 /* Set of rules to adapt the layout for screens with low resolution */
-@media screen and (max-aspect-ratio: 1/1), screen and (max-width: 1024px) {
+@media screen and (max-aspect-ratio: 4/3), screen and (max-width: 1024px) {
   /*Search Input Elements*/
 
   .search_input_section {
@@ -585,12 +603,20 @@ a:visited {
     font-size: 4vw;
   }
 
-  .location_search_button {
+  /*.location_search_button {
     width: 15vw;
     border-radius: 30%;
     height: 100%;
     box-sizing: border-box;
     margin-left: -10vw;
+  }*/
+
+  .desktop_location_search_button {
+    display: none;
+  }
+
+  .mobile_location_search_button {
+    display: flex;
   }
 
   .search_filters_container {
@@ -601,8 +627,10 @@ a:visited {
 
   .search_filters_label {
     font-weight: bold;
+    font-size: 5vw;
     margin-top: 0.6em;
-    margin-bottom: 5vw;
+    margin-bottom: 7vw;
+    margin-left: 1vw;
     width: 100%;
   }
 
@@ -662,7 +690,7 @@ a:visited {
   }
 
   .main_search_result {
-    background-color: #f2f2f2;
+    background-color: white;
     border-radius: 1vw;
     width: 100%;
     display: flex;
@@ -697,6 +725,7 @@ a:visited {
   .main_result_accommodation_thumbnail_generic {
     height: 45vw;
     width: 100%;
+    box-shadow: 0vw 0vw 0.4vw 0.3vw #f2f2f2;
   }
 
   .main_result_accommodation_thumbnail_1 {
