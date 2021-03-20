@@ -5,6 +5,11 @@
 
 html {
   font-family: "Raleway";
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 a,
