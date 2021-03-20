@@ -622,6 +622,7 @@ a:visited {
     margin-right: -12vw;
     z-index: 2; /* To display icon div 'above' label div'*/
     color: #0065fc;
+    font-size: 5vw;
   }
 
   .search_filter_tag {
@@ -641,7 +642,8 @@ a:visited {
 
   .nb_of_results_container {
     display: flex;
-    margin-top: 2vh;
+    margin-top: 7vw;
+    margin-left: 2vw;
   }
 
   .nb_of_results_icon {
@@ -672,7 +674,7 @@ a:visited {
   .search_result_label {
     width: 100%;
     display: flex;
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   .search_result_show_more,
@@ -751,6 +753,11 @@ a:visited {
     flex: 1;
     flex-wrap: wrap;
     align-items: flex-start;
+  }
+
+  .most_wanted_search_result_label_container {
+    font-size: 7vw;
+    margin-bottom: 7vw;
   }
 
   .most_wanted_search_result_grid {
