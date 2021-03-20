@@ -589,7 +589,7 @@ a:visited {
     object-fit: scale-down;
     grid-row: 1 / 1;
     grid-column: 1 / 1;
-    margin-left: 6vw;
+    margin-left: 3vw;
   }
 
   .top_nav_menu {
@@ -633,8 +633,8 @@ a:visited {
   }
 
   .search_input_section {
-    width: 98%;
-    margin-left: 2%;
+    width: 100%;
+    /*margin-left: 2%;*/
     margin-top: 2vw;
   }
 
@@ -656,7 +656,7 @@ a:visited {
     height: 12vw;
     width: 95%;
     box-sizing: border-box;
-    margin-left: 1vw;
+    margin-left: 4vw;
   }
 
   .search_field_location_logo {
@@ -686,6 +686,7 @@ a:visited {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1em;
+    margin-left: 3vw;
   }
 
   .search_filters_label {
@@ -693,7 +694,7 @@ a:visited {
     font-size: 4vw;
     margin-top: 0.6em;
     margin-bottom: 7vw;
-    margin-left: 2vw;
+    margin-left: 3vw;
     width: 100%;
   }
 
@@ -734,7 +735,7 @@ a:visited {
   .nb_of_results_container {
     display: flex;
     margin-top: 7vw;
-    margin-left: 2vw;
+    margin-left: 3vw;
   }
 
   .nb_of_results_icon {
@@ -863,7 +864,7 @@ a:visited {
   }
 
   .most_wanted_accommodation_thumbnail_generic {
-    width: 90%;
+    width: 94%;
     height: 38vw;
     margin-bottom: 2vw;
     margin-left: 3vw;
@@ -911,7 +912,7 @@ a:visited {
 
   .search_result_related_activities {
     height: auto;
-    width: 90%;
+    width: 96%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -921,9 +922,9 @@ a:visited {
 
   .related_activity_grid_element_generic {
     height: 38vw;
-    width: 96%;
+    width: 95%;
     font-size: 1vw;
-    margin: 2% 2% 2% 2%;
+    /*margin: 2% 2% 2% 2%;*/
   }
 
   .related_activity_img_generic {
