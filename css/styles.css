@@ -24,28 +24,31 @@ a:visited {
   z-index: 99;
 }
 
+.margin_center {
+  margin-right: 2%;
+  margin-left: 2%;
+  max-width: 96%;
+}
+
 /*To hide H2 title elements required for W3C compliance*/
 .display_none {
   display: none;
 }
 
 .company_header {
-  max-width: 100%;
   display: flex;
   justify-content: space-between;
   font-size: 1vw;
 }
 
 .company_logo {
-  /*margin-top: 2em;*/
   width: 8vw;
   object-fit: scale-down;
-  margin-right: 70vw;
+  margin-right: 65vw;
 }
 
 .top_nav_menu {
   display: flex;
-  justify-content: space-around;
   width: 15vw;
   box-sizing: border-box;
 }
@@ -53,6 +56,8 @@ a:visited {
 .top_nav_menu a {
   padding-top: 3vh;
   font-weight: bold;
+  padding-right: 1vw;
+  padding-left: 1vw;
 }
 
 .top_nav_menu a:hover,
@@ -75,7 +80,7 @@ a:visited {
 /*Search Input Elements*/
 
 .search_input_section {
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .search_input_main_label {
@@ -181,7 +186,6 @@ a:visited {
   z-index: 2; /* To display icon div 'above' label div'*/
   color: #0065fc;
   font-size: 0.8em;
-  padding: auto;
 }
 
 .search_filter_tag {
@@ -211,14 +215,13 @@ a:visited {
 }
 
 .nb_of_results_label {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 /*accommodation section layout and styling*/
 /*main section*/
 
 .accommodation_section {
-  width: 100%;
   display: flex;
   margin-top: 2em;
 }
@@ -361,9 +364,6 @@ a:visited {
   width: 84%;
   display: grid;
   grid-template-columns: 100%;
-  /*grid-template-rows: 33.3% 33.3% 33.3%;*/
-  /*Does not work as expected (will give different sized fractions) used percentage method instead*/
-  /*tester virer la height pour 1FR*/
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0% 8% 0% 8%;
 }
@@ -455,7 +455,7 @@ a:visited {
   /*grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;*/
   grid-template-rows: repeat(20, 5%);
   grid-column-gap: 2%;
-  margin-bottom: 5vw;
+  margin-bottom: 3vw;
 }
 
 .related_activity_grid_element_generic {
@@ -551,12 +551,13 @@ a:visited {
   display: flex;
   background-color: #f2f2f2;
   padding-bottom: 4vw;
+  padding-top: 2vw;
 }
 
 .about_us {
   width: 100%;
   flex: 1;
-  margin-left: 2em;
+  margin-left: 2vw;
 }
 
 .our_accommodations {
@@ -570,19 +571,25 @@ a:visited {
 }
 
 .footer_category {
-  font-size: 12px;
+  font-size: 1.2vw;
   font-weight: bold;
   color: black;
 }
 
 .footer a {
-  font-size: 10px;
+  font-size: 1vw;
   text-decoration: none;
   color: black;
 }
 
 /* Set of rules to adapt the layout for screens with low resolution */
 @media screen and (max-aspect-ratio: 4/3), screen and (max-width: 1024px) {
+  .margin_center {
+    margin-right: 0%;
+    margin-left: 0%;
+    max-width: 100%;
+  }
+
   /*Search Input Elements*/
 
   .company_header {
@@ -728,7 +735,7 @@ a:visited {
   }
 
   .search_filter_tag {
-    border: 0.5vw solid deebff;
+    border: 0.5vw solid #f2f2f2;
     height: 12vw;
     border-radius: 8vw;
     display: flex;
