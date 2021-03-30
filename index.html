@@ -5,6 +5,7 @@
         <meta charset="utf-8"> <!--preconisation W3C-->
         <meta name="author" content="Clement Benezech">
         <meta name="description" content="This page is a transcription of an accomodation booking website UX/UI design into HTML/CSS. It aims at W3C compliance, code quality, and responsiveness.">
+        <meta name=viewport content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" type="image/svg+xml" href="images/logo/Reservia.svg">
         <script src="https://kit.fontawesome.com/4966b9f0e9.js" crossorigin="anonymous"></script>
@@ -23,8 +24,7 @@
         </header> 
 
         <section class="search_input_section margin_center">     <!--Contains search labels, input fields, search filters-->
-            <h2 class="display_none">Search Input Section</h2> <!--Required by https://validator.w3.org/ -->
-            <div class="search_input_main_label">Trouvez votre hébergement pour des vacances de rêve</div>
+            <h2 class="search_input_main_label">Trouvez votre hébergement pour des vacances de rêve</h2>
             <div class="search_input_secondary_label">En plein centre ville ou en pleine nature</div>
             <div class="search_field_container"> <!--Input Field for desired location-->
                 <div class="search_field_location_logo"><i class="fas fa-map-marker-alt"></i></div>
@@ -73,9 +73,8 @@
 
 
         <section id="accomodation" class="accommodation_section margin_center"> <!--Contains accomodation search results-->
-            <h2 class="display_none">Accommodation Section</h2> <!--Required by https://validator.w3.org/ -->
             <section class="main_search_result"> <!--Contains search results main display -->
-                    <h3 class="search_result_label">Hébergements à Marseille</h3>
+                    <h2 class="search_result_label">Hébergements à Marseille</h2>
                 <div class="main_search_result_grid">
                     <a href="index.html" class="main_result_accommodation_thumbnail_generic main_result_accommodation_thumbnail_1">
                         <img class="main_result_accommodation_img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
@@ -159,7 +158,7 @@
             </section>    
             <aside class="most_wanted_search_result">  <!--Contains most favorited results display -->
                 <div class="most_wanted_search_result_label_container">
-                    <p class="search_result_label">Les plus populaires</p>
+                    <h2 class="search_result_label">Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>
                 </div>
                 <div class="most_wanted_search_result_grid">
@@ -212,9 +211,8 @@
         </section>
 
         <section class="activities_section margin_center">     <!--Contains activities near accomodation search results -->
-        <p id="activities" class="activities_label">Activités à Marseille</p>
+        <h2 id="activities" class="activities_label">Activités à Marseille</h2>
             <div class="search_result_related_activities">
-            <h2 class="display_none">Activities</h2> <!--Required by https://validator.w3.org/ -->
             
 
             <!--3 elements for each thunmbnail:
